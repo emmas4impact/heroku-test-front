@@ -17,6 +17,7 @@ class App extends React.Component {
     })
    }
   render() {
+    console.log(this.state.comments)
     return (
       <div className="App">
         <header className="App-header">
