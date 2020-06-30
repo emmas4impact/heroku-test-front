@@ -12,6 +12,7 @@ class App extends React.Component {
     const resp = await fetch(`${apiUrl}/books/asin/comments`)
     const comments = await resp.json()
     
+    console.log(comments)
     this.setState({
       comments : comments
     })
@@ -42,6 +43,7 @@ class App extends React.Component {
     this.setState({
       books: jsonBooks.data,
     })
+    this.fetchcomments()
   }
 }
 
